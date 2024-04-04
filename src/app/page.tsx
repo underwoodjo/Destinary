@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 // import function to register Swiper custom elements
 
 export default function Home() {
@@ -7,10 +7,11 @@ export default function Home() {
       {/* do not use bg-opacity-# when styling an image that is full wid/height, just use opacity-# */}
 
       <Image
-        className="h-screen w-full object-cover opacity-80 relative"
-        src="/myroad.jpeg" //?? change source to change initial b
+        className="h-screen w-full object-cover object-left overflow-hidden relative opacity-80"
+        src="/summerroad.jpeg" //?? change source to change initial b
         width={500}
         height={500}
+        sizes="(100vw, 100vh)"
         alt="road background image"
       />
       {/*//??  Destinary Text Absolute Postitioning? */}
@@ -20,9 +21,11 @@ export default function Home() {
            left-0 right-20 bottom-0 flex flex-col items-center"
       >
         {/* Heading - Title */}
-        <h1 className="font-'Satisfy-Regular' text-5xl">Destinary</h1>
+        <h1 className="font-satisfyregular text-7xl">Destinary</h1>
         {/* Subheading "Your Destin..." */}
-        <h4 className="ps-4">Your Destination Itinerary</h4>
+        <h4 className="font-nunito font-light text-xl ps-20 pt-2">
+          Your Destination Itinerary
+        </h4>
       </div>
 
       <section>
