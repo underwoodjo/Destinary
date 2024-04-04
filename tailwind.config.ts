@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        'Satisfy': ['"Satisfy"', 'cursive'],
+        satisfyregular: ['Satisfy', 'cursive'],
+        nunito: ['Nunito', 'sans-serif'],
       },
       backgroundOpacity: {
         active: '',
