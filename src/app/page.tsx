@@ -1,6 +1,6 @@
 import Image from "next/image";
 // import function to register Swiper custom elements
-
+import Features from "@/components/Features.tsx";
 export default function Home() {
   return (
     <main className="relative">
@@ -23,19 +23,12 @@ export default function Home() {
         {/* Heading - Title */}
         <h1 className="font-satisfyregular text-7xl">Destinary</h1>
         {/* Subheading "Your Destin..." */}
-        <h4 className="font-nunito font-light text-xl ps-20 pt-2">
+        <h4 className="font-nunito font-normal text-xl ps-20 pt-2">
           Your Destination Itinerary
         </h4>
       </div>
-
       <section>
-        <h2>Features</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit odit
-          quos fuga sint iure dolor similique nesciunt totam, fugiat incidunt
-          blanditiis, harum non maiores laudantium tenetur nulla commodi quae
-          in?
-        </p>
+        <Features />
       </section>
     </main>
   );
