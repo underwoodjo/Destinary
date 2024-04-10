@@ -35,7 +35,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-yellow-400 block rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-cyan-300 block rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -50,7 +50,7 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           {/* Adjust the Card Color Below */}
-          <Card className="bg-zinc-400">
+          <Card className="bg-stone-400 backdrop-blur">
             <CardTitle className="swiper-no-swiping">{item.title}</CardTitle>
             <CardDescription className="swiper-no-swiping text-black">
               {item.description}
