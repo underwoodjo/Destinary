@@ -4,23 +4,23 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
 @font-face {
   .satisfy-regular {
-    font-family: "Satisfy", cursive;
+    font-family: 'Satisfy', cursive;
     font-weight: 400;
     font-style: normal;
-    src: url("/fonts/Satisfy-Regular.ttf") format("truetype");
+    src: url('/fonts/Satisfy-Regular.ttf') format('truetype');
   }
 }
 @font-face {
   .nunito {
-    font-family: "Nunito", sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-optical-sizing: auto;
     font-weight: 200 300 400;
     font-style: normal;
