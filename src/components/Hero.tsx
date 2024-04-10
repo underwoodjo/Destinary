@@ -20,9 +20,11 @@ const Hero = () => {
      left-0 right-20 bottom-0 flex flex-col items-center"
       >
         {/* Heading - Title */}
-        <h1 className="font-satisfyregular text-7xl">Destinary</h1>
+        <h1 className="font-satisfyregular text-7xl swiper-no-swiping">
+          Destinary
+        </h1>
         {/* Subheading "Your Destin..." */}
-        <h4 className="font-nunito font-normal text-xl ps-20 pt-2">
+        <h4 className="font-nunito font-normal text-xl ps-20 pt-2 swiper-no-swiping">
           Your Destination Itinerary
         </h4>
       </div>

@@ -1,7 +1,7 @@
-import { cn } from "../../app/_lib/utils/cn.ts";
-import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
-import { useState } from "react";
+import { cn } from '../../app/_lib/utils/cn.ts';
+import { AnimatePresence, motion } from 'framer-motion';
+import Link from 'next/link';
+import { useState } from 'react';
 
 export const HoverEffect = ({
   items,
@@ -19,7 +19,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
+        'grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10',
         className
       )}
     >
@@ -27,7 +27,7 @@ export const HoverEffect = ({
         <Link
           href={item?.link}
           key={item?.link}
-          className="relative group block p-2 h-full w-full"
+          className="relative group block p-2 h-full w-full swiper-no-swiping"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
@@ -51,8 +51,10 @@ export const HoverEffect = ({
           </AnimatePresence>
           {/* Adjust the Card Color Below */}
           <Card className="bg-zinc-400">
-            <CardTitle>{item.title}</CardTitle>
-            <CardDescription className="">{item.description}</CardDescription>
+            <CardTitle className="swiper-no-swiping">{item.title}</CardTitle>
+            <CardDescription className="swiper-no-swiping text-black">
+              {item.description}
+            </CardDescription>
           </Card>
         </Link>
       ))}
@@ -70,7 +72,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        'rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20',
         className
       )}
     >
@@ -88,7 +90,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-4", className)}>
+    <h4 className={cn('text-zinc-100 font-bold tracking-wide mt-4', className)}>
       {children}
     </h4>
   );
@@ -103,7 +105,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+        'mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm',
         className
       )}
     >

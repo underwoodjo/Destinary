@@ -10,7 +10,7 @@ import 'swiper/css/effect-fade';
 import Features from '@/components/Features.tsx';
 import Hero from '@/components/Hero';
 
-SwiperCore.use([Mousewheel, Keyboard, EffectFade]);
+SwiperCore.use([Mousewheel, Keyboard]);
 
 export default function Home() {
   return (
