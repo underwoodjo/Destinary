@@ -28,7 +28,9 @@ export default function Home() {
           <Hero />
         </SwiperSlide>
         <SwiperSlide>
-          <Features />
+          <div className="bg-amber-50">
+            <Features />
+          </div>
         </SwiperSlide>
       </Swiper>
     </main>
